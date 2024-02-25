@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: eflyer
+  name: eflyer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eflyer
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: eflyer
+    spec:
+      containers:
+      - image: tmoshe/msh:eflyer
+        name: msh
+        resources: {}
+status: {}
