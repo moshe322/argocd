@@ -18,7 +18,7 @@ spec:
         app: eflyer
     spec:
       containers:
-      - image: tmoshe/msh:eflyer
+      - image: tmoshe/msh:78
         name: msh
         resources: {}
 status: {}
